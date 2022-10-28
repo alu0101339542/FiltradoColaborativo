@@ -14,9 +14,9 @@ fichero.addEventListener('change', function(e) {
       filas.shift();
       filas.forEach((f) => {
         let fila = f.split(' ');
-        console.log('actualizado2');
+        console.log('actualizado3');
         fila = fila.map(item => {
-            console.log('-');
+            console.log(item);
             if (item === '-'){
               return item;
             } else {
