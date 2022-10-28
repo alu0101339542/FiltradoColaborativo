@@ -16,6 +16,7 @@ fichero.addEventListener('change', function(e) {
         let fila = f.split(' ');
         fila = fila.map(item => {
             if (item === '-'){
+              console.log('aqui');
               return item;
             } else {
               return (item - min)/(max - min);
