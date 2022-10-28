@@ -14,12 +14,12 @@ fichero.addEventListener('change', function(e) {
       filas.shift();
       filas.forEach((f) => {
         let fila = f.split(' ');
-        fila = fila.map(item => {
-            console.log(item);
-            if (item === '-'){
-              return item;
+        fila = fila.map(i => {
+            console.log(i);
+            if (i === '-'){
+              return i;
             } else {
-              return (item - min)/(max - min);
+              return (i - min)/(max - min);
             }
         });
         matriz_entrada.push(fila);
