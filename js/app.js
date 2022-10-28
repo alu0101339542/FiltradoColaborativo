@@ -14,10 +14,10 @@ fichero.addEventListener('change', function(e) {
       filas.shift();
       filas.forEach((f) => {
         let fila = f.split(' ');
-        console.log('actualizado3');
+        console.log('actualizado4');
         fila = fila.map(item => {
             console.log(item);
-            if (item === '-'){
+            if (item == '-'){
               return item;
             } else {
               return (item - min)/(max - min);
