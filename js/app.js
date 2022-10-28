@@ -9,8 +9,8 @@ fichero.addEventListener('change', function(e) {
       let lineas = reader.result.toString();
       let filas = lineas.split("\n");
       let normalize = filas[0].split(' ');
-      min = normalize[0];
-      max = normalize[1];
+      min = parseInt(normalize[0]);
+      max = parseInt(normalize[1]);
       filas.shift();
       filas.forEach((f) => {
         let fila = f.split(' ');
@@ -171,7 +171,7 @@ function sistemaRecomendacion(metrica, prediccion, numero_vecinos, medias_vecino
     for(let i = 0; i < matriz_salida.length; i++) {
       for(let j = 0; j < matriz_salida[i].length; j++) {
           if(typeof matriz_salida[i][j] === "number") {
-            matriz_salida[i][j] = (matriz_salida[i][j] * (max - min) + parseInt(min));
+            matriz_salida[i][j] = (matriz_salida[i][j] * (max - min) + min);
           }
       }
   }
