@@ -7,8 +7,7 @@ fichero.addEventListener('change', function(e) {
     reader.readAsText(fichero.files[0]);
     reader.onload = function () {
       let lineas = reader.result.toString();
-        alert('actualizado');
-      let filas = lineas.split('\n');
+      let filas = lineas.split('\r\n');
       let normalize = filas[0].split(' ');
       min = parseInt(normalize[0]);
       max = parseInt(normalize[1]);
