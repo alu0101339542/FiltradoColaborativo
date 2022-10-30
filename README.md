@@ -23,3 +23,7 @@
   3
 4. Tipo de predicción:</br>
   Predicción simple
+  
+  
+
+![image](https://user-images.githubusercontent.com/72199884/198886502-748286df-f4c8-4899-8c0d-d48923d7be74.png)
