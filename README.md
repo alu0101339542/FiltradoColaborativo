@@ -1,5 +1,5 @@
 # Explicación del código
-  Nos encontramos ante un códico en Java Script al cual se le pasa un fichero con una matriz, la cual su primer elemento es el valor mínimo de esta y el segundo el valor máximo, esta matriz tiene valores sin determinar (-) que usando diferentes algoritmos se podrá predecir su valor. Esta matriz representa un conjunto de usuarios y la puntuación que estos le otorgan a ciertos items. Los valores que no se conocen serán predecidos utilizando alguna de las siguientes métricas:</br>
+  Nos encontramos ante un código en Java Script al cual se le pasa un fichero con una matriz, la cual su primer elemento es el valor mínimo de esta y el segundo el valor máximo, esta matriz tiene valores sin determinar (-) que usando diferentes algoritmos se podrá predecir su valor. Esta matriz representa un conjunto de usuarios y la puntuación que estos le otorgan a ciertos items. Los valores que no se conocen serán predecidos utilizando alguna de las siguientes métricas:</br>
   -Correlación de Pearson </br>
   -Distancia coseno</br>
   -Distancia euclídea</br>
