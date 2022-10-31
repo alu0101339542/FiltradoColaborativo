@@ -1,12 +1,12 @@
 # Explicación del código
-  Para el desarrollo de esta aplicación web se han utilizado HTML, CSS y JavaScript, así como el framework de diseño MaterializeCSS. El código desarrollado consta en primer lugar de un bloque de código encargado de extraer la matriz del fichero de entrada una vez este ha sido cargado, y de una serie de funciones que se encargarán de la aplicación de los algoritmos correspondientes y su muestra final en la interfaz de la aplicación web. De esta forma se tienen las siguientes funciones:
+  Para el desarrollo de esta aplicación web se han utilizado HTML, CSS y JavaScript, así como el framework de diseño MaterializeCSS. El código desarrollado consta de un bloque de código encargado de la extracción y normalización de la matriz del fichero de entrada una vez este ha sido cargado, y de una serie de funciones que se encargarán de la aplicación de los algoritmos correspondientes y su muestra final en la interfaz de la aplicación web. De esta forma se tienen las siguientes funciones:
   - medias(): Calcula las medias de las puntuaciones de cada vecino.
   - pearson(): Calcula la similaridad entre dos vecinos según la correlación de Pearson.
   - coseno(): Calcula la similaridad entre dos vecinos según la distancia coseno.
   - euclidea(): Calcula la similaridad entre dos vecinos según la distancia euclídea.
   - predSimple(): Calcula la predicción de la puntuación de un item basándose en los vecinos seleccionados.
   - diferenciaMedia(): Calcula la predicción de la puntuación de un item basándose en los vecinos seleccionados aplicando diferencia con la media.
-  - sistemaRecomendación(): Realiza el cálculo completo del sistema de recomendación utilizando la métrica y predicción seleccionadas por el usuario.
+  - sistemaRecomendación(): Realiza el cálculo completo del sistema de recomendación utilizando la métrica y predicción seleccionadas por el usuario, así como de la desnormalización de la matriz resultado.
   - run(): Es la función que inicia la ejecución del programa, es la encargada de llamar al sistema de recomendación y mostrar los resultados en la interfaz gráfica de la aplicación.
   
   En cuanto a su uso, a la aplicación se le debe dar como entrada un fichero con la matriz de utilidad que se quiere analizar, este fichero debe indicar en su primera línea, separados por un espacio, los valores mínimo y máximo de la matriz y, en las siguientes líneas, la propia matriz. Esta matriz tendrá valores sin determinar (-) que serán predecidos utilizando la métrica, la predicción y el número de vecinos indicados por el usuario. Está aplicación web ha sido desplegada a través de Github Pages y puede ser visitada a través del siguiente enlace: [Filtrado colaborativo](https://alu0101339542.github.io/FiltradoColaborativo.github.io/)
