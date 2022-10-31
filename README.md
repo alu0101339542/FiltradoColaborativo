@@ -1,9 +1,15 @@
 # Explicación del código
-  Nos encontramos ante un código en Java Script al cual se le pasa un fichero con una matriz, la cual su primer elemento es el valor mínimo de esta y el segundo el valor máximo, esta matriz tiene valores sin determinar (-) que usando diferentes algoritmos se podrá predecir su valor. Esta matriz representa un conjunto de usuarios y la puntuación que estos le otorgan a ciertos items. Los valores que no se conocen serán predecidos utilizando alguna de las siguientes métricas:</br>
-  -Correlación de Pearson </br>
-  -Distancia coseno</br>
-  -Distancia euclídea</br>
+  Para el desarrollo de esta aplicación web se han utilizado HTML, CSS y JavaScript, así como el framework de diseño MaterializeCSS. El código desarrollado consta en primer lugar de un bloque de código encargado de extraer la matriz del fichero de entrada una vez este ha sido cargado, y de una serie de funciones que se encargarán de la aplicación de los algoritmos correspondientes y su muestra final en la interfaz de la aplicación web. De esta forma se tienen las siguientes funciones:
+  - medias(): Calcula las medias de las puntuaciones de cada vecino.
+  - pearson(): Calcula la similaridad entre dos vecinos según la correlación de Pearson.
+  - coseno(): Calcula la similaridad entre dos vecinos según la distancia coseno.
+  - euclidea(): Calcula la similaridad entre dos vecinos según la distancia euclídea.
+  - predSimple(): Calcula la predicción de la puntuación de un item basándose en los vecinos seleccionados.
+  - diferenciaMedia(): Calcula la predicción de la puntuación de un item basándose en los vecinos seleccionados aplicando diferencia con la media.
+  - sistemaRecomendación(): Realiza el cálculo completo del sistema de recomendación utilizando la métrica y predicción elegidas por el usuario.
+  - run(): Es la función que inicia la ejecución del programa, es el encargado de llamar al sistema de recomendación y mostrar los resultados en la interfaz gráfica de la aplicación.
   
+  En cuanto a su uso, a la aplicación se le debe dar como entrada un fichero con la matriz de utilidad que se quiere analizar, la primera línea de este frichero debe indicar, separados por un espacio, los valores mínimo y máximo de la matriz, y a continuación la propia matriz. Esta matriz tendrá valores sin determinar (-) que serán predecidos utilizando la mátrica, predicción y número de vecinos elegidos por el usuario. Está aplicación web ha sido desplegada a través de Github Pages y puede ser visitada a través del siguiente enlace: [Filtrado colaborativo](https://github.com/alu0101339542/FiltradoColaborativo.github.io)
 
 # Ejemplo del funcionamiento:
 1. Elegir un fichero con el siguiente formato: </br>
