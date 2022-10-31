@@ -6,7 +6,7 @@
   - euclidea(): Calcula la similaridad entre dos vecinos según la distancia euclídea.
   - predSimple(): Calcula la predicción de la puntuación de un item basándose en los vecinos seleccionados.
   - diferenciaMedia(): Calcula la predicción de la puntuación de un item basándose en los vecinos seleccionados aplicando diferencia con la media.
-  - sistemaRecomendación(): Realiza el cálculo completo del sistema de recomendación utilizando la métrica y predicción seleccionadas por el usuario, así como de la desnormalización de la matriz resultado.
+  - sistemaRecomendación(): Realiza el cálculo completo del sistema de recomendación utilizando la métrica, predicción y número de vecinos seleccionadas por el usuario, así como de la desnormalización de la matriz resultado.
   - run(): Es la función que inicia la ejecución del programa, es la encargada de llamar al sistema de recomendación y mostrar los resultados en la interfaz gráfica de la aplicación.
   
   En cuanto a su uso, a la aplicación se le debe dar como entrada un fichero con la matriz de utilidad que se quiere analizar, este fichero debe indicar en su primera línea, separados por un espacio, los valores mínimo y máximo de la matriz y, en las siguientes líneas, la propia matriz. Esta matriz tendrá valores sin determinar (-) que serán predecidos utilizando la métrica, la predicción y el número de vecinos indicados por el usuario. Está aplicación web ha sido desplegada a través de Github Pages y puede ser visitada a través del siguiente enlace: [Filtrado colaborativo](https://alu0101339542.github.io/FiltradoColaborativo.github.io/)
