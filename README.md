@@ -1,5 +1,5 @@
 # Explicación del código
-  Para el desarrollo de esta aplicación web se han utilizado HTML, CSS y JavaScript, así como el framework de diseño MaterializeCSS. El código desarrollado consta de un bloque de código encargado de la extracción y normalización de la matriz del fichero de entrada una vez este ha sido cargado, y de una serie de funciones que se encargarán de la aplicación de los algoritmos correspondientes y su muestra final en la interfaz de la aplicación web. De esta forma se tienen las siguientes funciones:
+  Para el desarrollo de esta aplicación web se han utilizado HTML, CSS y JavaScript, así como el framework de diseño MaterializeCSS y la librería jQuery. El código desarrollado consta de un bloque de código encargado de la extracción y normalización de la matriz del fichero de entrada una vez este ha sido cargado, y de una serie de funciones que se encargarán de la aplicación de los algoritmos correspondientes y su muestra final en la interfaz de la aplicación web. De esta forma se tienen las siguientes funciones:
   - medias(): Calcula las medias de las puntuaciones de cada vecino.
   - pearson(): Calcula la similaridad entre dos vecinos según la correlación de Pearson.
   - coseno(): Calcula la similaridad entre dos vecinos según la distancia coseno.
